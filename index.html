@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<!-- DEMO de venta, no el sitio oficial del local. Lleva nombre, resenas y
+     horario reales, por eso va con noindex. Se quita si el local contrata. -->
+<meta name="robots" content="noindex, nofollow">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Café Tu amor · Cafetería familiar en Padre Hurtado</title>
+<meta name="description" content="Café Tu amor — cafetería familiar en El Trébol 1583, Padre Hurtado. 4.5★ en Google. Consumo en el lugar, para llevar y despacho a domicilio.">
+
+<!--
+  ============================================================
+  DEMO — CAFÉ TU AMOR (El Trébol 1583, Padre Hurtado)
+
+  ✅ DATOS REALES VERIFICADOS (10-09-2026)
+  - Google Maps: 4.5★, 19 opiniones, Cafetería.
+  - Dirección: El Trébol 1583, 9710190 Padre Hurtado.
+  - Place ID real: 0x9662dd32f9e981f9:0x6537cb513eeb11f0
+  - Coordenadas: -33.5697193, -70.7910206
+  - Rango de precio informado en Google por 10 personas: $5.000–10.000
+    por persona. Es un dato agregado de Google, NO una carta: se muestra
+    citado como tal, nunca como precio de un producto.
+  - Servicios confirmados en su ficha: consumo en el lugar, para llevar
+    y entrega a domicilio.
+  - Cierra a las 21:00 (confirmado por Google).
+  - 3 reseñas reales con nombre.
+  - Fotos: fotos propias del local publicadas en su ficha de Google.
+    ⚠️ Se DESCARTÓ una foto del salón con clientes identificables (adultos
+    y niños): no se publica gente reconocible sin su autorización. Se usa
+    la del mismo salón vacío, que además muestra mejor el logo real.
+  - Dato real sacado de la RESPUESTA del propio dueño a una reseña
+    (hace 8 meses): "el negocio en sí es nuevo, solo lleva dos meses".
+    Es decir, a hoy la cafetería tiene alrededor de diez meses.
+
+  ⚠️ PENDIENTE / NUNCA INVENTADO:
+  - SIN TELÉFONO: Google no publica ninguno ("Agregar número de teléfono
+    del lugar"). No se inventa: la página no lleva botón de llamar ni de
+    WhatsApp hasta conseguirlo. ESTE ES EL DATO MÁS IMPORTANTE QUE FALTA.
+  - No se encontró Instagram del local. Verificar si tienen.
+  - PRECIOS: no publican carta. Los productos van sin precio y el
+    carrito muestra "A consultar".
+  - La carta lista solo lo confirmado por sus reseñas y fotos.
+  - Falta el logo real (en las fotos se ve el logo de una taza).
+  ============================================================
+-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700&family=Asap:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="loader">
+  <div class="loader-taza" aria-hidden="true">
+    <svg viewBox="0 0 64 64" width="50" height="50">
+      <path d="M10 22h34v18a14 14 0 0 1-14 14h-6a14 14 0 0 1-14-14z" fill="currentColor"/>
+      <path d="M44 27h5a7 7 0 0 1 0 14h-5" fill="none" stroke="currentColor" stroke-width="4"/>
+    </svg>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <button class="brand" data-tab="inicio">
+      <span class="brand-ico" aria-hidden="true">
+        <svg viewBox="0 0 64 64" width="22" height="22">
+          <path d="M10 22h34v18a14 14 0 0 1-14 14h-6a14 14 0 0 1-14-14z" fill="currentColor"/>
+        </svg>
+      </span>
+      <span class="brand-name">Tu amor</span>
+    </button>
+
+    <nav class="nav-links" id="navLinks" aria-label="Navegación principal">
+      <button class="nav-link active" data-tab="inicio">Inicio</button>
+      <button class="nav-link" data-tab="nosotros">Nosotros</button>
+      <button class="nav-link" data-tab="carta">Carta</button>
+      <button class="nav-link" data-tab="resenas">Reseñas</button>
+      <button class="nav-link" data-tab="visitanos">Visítanos</button>
+    </nav>
+
+    <div class="header-actions">
+      <!-- Sin botón de contacto en el header: el local NO tiene teléfono
+           publicado en Google y no se inventa uno. -->
+      <button class="btn btn-solid btn-sm" data-tab="visitanos">Cómo llegar</button>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ================= INICIO ================= -->
+<section class="tab-panel active" data-tab-panel="inicio">
+  <div class="hero">
+    <div class="hero-photo">
+      <img src="fotos/local.jpg" alt="Salón de Café Tu amor en Padre Hurtado, con sus mesas de madera y sillas turquesa">
+    </div>
+    <div class="hero-scrim"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal">Cafetería familiar · Padre Hurtado</p>
+      <h1 class="reveal">Café Tu amor</h1>
+      <p class="hero-lead reveal">
+        Una cafetería de barrio en El Trébol 1583, hecha por una familia.
+        Para sentarse, para llevar, o para que te la lleven.
+      </p>
+
+      <div class="hero-pills reveal">
+        <span class="pill"><span class="status-dot" id="statusDot"></span><span id="statusText">Consultando horario…</span></span>
+        <span class="pill">★ <strong>4.5</strong> · 19 opiniones en Google</span>
+        <span class="pill">🛵 Despacho a domicilio</span>
+      </div>
+
+      <div class="hero-ctas reveal">
+        <button class="btn btn-solid" data-tab="carta">Ver la carta</button>
+        <button class="btn btn-ghost" data-tab="visitanos">Cómo llegar</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="wrap">
+      <div class="eyebrow-row reveal">
+        <span class="eyebrow">Lo que somos</span>
+        <h2 class="section-title">Un proyecto familiar</h2>
+        <p class="section-sub">
+          El propio dueño lo contó respondiendo una reseña: el local es nuevo y
+          lo están sacando adelante en familia, trabajando juntos para mejorar.
+        </p>
+      </div>
+      <div class="pilares">
+        <article class="info-card reveal">
+          <div class="pilar-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9z"/></svg></div>
+          <h3>Atención que se nota</h3>
+          <p>"La atención maravillosa", "todo excelente, la atención, la limpieza" — es lo que más repiten sus reseñas reales.</p>
+        </article>
+        <article class="info-card reveal">
+          <div class="pilar-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14 12 6l8 8z"/><path d="M4 14h16v4H4z"/></svg></div>
+          <h3>Comida de verdad</h3>
+          <p>"La comida exquisita, sobre todo la salsa de ajo. ¡Creo que he comido de todo!", dice una clienta frecuente.</p>
+        </article>
+        <article class="info-card reveal">
+          <div class="pilar-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="18" r="2.5"/><circle cx="17" cy="18" r="2.5"/><path d="M4 18h-1V9h11l3 4h3v5h-1"/></svg></div>
+          <h3>Te lo llevamos</h3>
+          <p>Consumo en el lugar, para llevar y despacho a domicilio — los tres servicios están confirmados en su ficha de Google.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= NOSOTROS ================= -->
+<section class="tab-panel" data-tab-panel="nosotros">
+  <div class="section">
+    <div class="wrap">
+      <div class="eyebrow-row reveal">
+        <span class="eyebrow">Quiénes somos</span>
+        <h2 class="section-title">Un local nuevo, con la casa llena</h2>
+      </div>
+      <div class="nosotros-grid">
+        <div class="nosotros-text reveal">
+          <p class="lead">
+            Café Tu amor abrió hace cerca de <strong>diez meses</strong> en El Trébol,
+            Padre Hurtado. Sillas turquesa, mesas de
+            madera clara y pasto sintético en el piso, en un salón amplio pensado
+            para sentarse con calma.
+          </p>
+          <p>
+            Es un <strong>proyecto familiar</strong>: cuando un cliente les dejó una reseña
+            con sugerencias, respondieron agradeciendo y contando que el negocio recién
+            partía y que estaban trabajando juntos para mejorar. Se nota que leen y
+            contestan todo lo que les escriben.
+          </p>
+          <div class="badges reveal">
+            <span class="badge">4.5★ · 19 opiniones</span>
+            <span class="badge">Consumo en el lugar</span>
+            <span class="badge">Para llevar</span>
+            <span class="badge">Despacho a domicilio</span>
+          </div>
+        </div>
+        <div class="nosotros-fotos reveal">
+          <figure class="foto-grande">
+            <img src="fotos/local.jpg" alt="Salón y mostrador de Café Tu amor" loading="lazy">
+            <figcaption>El salón y el mostrador</figcaption>
+          </figure>
+          <figure><img src="fotos/producto3.jpg" alt="Producto de Café Tu amor" loading="lazy"></figure>
+          <figure><img src="fotos/producto2.jpg" alt="Producto de Café Tu amor" loading="lazy"></figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CARTA ================= -->
+<section class="tab-panel" data-tab-panel="carta">
+  <div class="section">
+    <div class="wrap">
+      <div class="eyebrow-row reveal">
+        <span class="eyebrow">La carta</span>
+        <h2 class="section-title">Nuestra carta</h2>
+        <p class="section-sub">
+          Arma tu pedido y consúltanos. Según el dato que Google recoge de
+          10 clientes, el gasto promedio va entre $5.000 y $10.000 por persona.
+        </p>
+      </div>
+      <div class="menu-tabs" id="menuTabs" role="tablist" aria-label="Categorías de la carta"></div>
+      <div id="menuPanels"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RESEÑAS ================= -->
+<section class="tab-panel" data-tab-panel="resenas">
+  <div class="section">
+    <div class="wrap">
+      <div class="eyebrow-row reveal">
+        <span class="eyebrow">Lo que dicen</span>
+        <h2 class="section-title">4.5 / 5 · 19 opiniones en Google</h2>
+      </div>
+      <div class="resenas-grid">
+        <article class="review-card reveal">
+          <div class="stars" aria-label="5 de 5 estrellas">★★★★★</div>
+          <p>"Soy cliente frecuente de esta cafetería. He ido con amigos y familia y siempre
+             ha estado excelente. La atención maravillosa y la comida exquisita, sobre todo
+             la salsa de ajo. ¡Creo que he comido de todo! Me encanta."</p>
+          <footer><span class="avatar" aria-hidden="true">CC</span>
+            <span class="review-meta"><strong>Camila Céspedes</strong>hace 10 meses</span></footer>
+        </article>
+        <article class="review-card reveal">
+          <div class="stars" aria-label="5 de 5 estrellas">★★★★★</div>
+          <p>"Fui con mi hijo y todo excelente: la atención, la limpieza, los productos que
+             ofrecen, todo muy rico y variado. Los recomiendo ampliamente."</p>
+          <footer><span class="avatar" aria-hidden="true">MP</span>
+            <span class="review-meta"><strong>Margot Peña Reyes</strong>Local Guide · hace 8 meses</span></footer>
+        </article>
+        <article class="review-card reveal">
+          <div class="stars" aria-label="4 de 5 estrellas">★★★★☆</div>
+          <p>"Hemos visitado esta cafetería en dos oportunidades con mi esposa, siempre con
+             buena disposición y ánimo de pasar un momento agradable. Valoramos el esfuerzo
+             familiar que hay detrás de este lugar."</p>
+          <footer><span class="avatar" aria-hidden="true">JM</span>
+            <span class="review-meta"><strong>Juan Pablo Medina</strong>Local Guide · hace 8 meses</span></footer>
+        </article>
+      </div>
+      <p class="review-cta-bajo reveal">
+        <a href="https://search.google.com/local/writereview?placeid=0x9662dd32f9e981f9:0x6537cb513eeb11f0" target="_blank" rel="noopener">
+          ¿Nos visitaste? Déjanos tu reseña en Google
+        </a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= VISÍTANOS ================= -->
+<section class="tab-panel" data-tab-panel="visitanos">
+  <div class="section">
+    <div class="wrap">
+      <div class="eyebrow-row reveal">
+        <span class="eyebrow">Visítanos</span>
+        <h2 class="section-title">Te esperamos en El Trébol</h2>
+      </div>
+      <div class="visitanos-grid">
+        <div class="visitanos-info reveal">
+          <div class="dato">
+            <span class="dato-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-6-7-11a7 7 0 1 1 14 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+            <div><strong>El Trébol 1583</strong><span>Padre Hurtado, Región Metropolitana</span></div>
+          </div>
+          <div class="dato">
+            <span class="dato-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+            <div>
+              <strong>Horario</strong>
+              <span>Cierra a las 21:00</span>
+              <span class="nota-fuente">La hora de apertura no está publicada en Google — conviene confirmarla con el local.</span>
+            </div>
+          </div>
+          <div class="dato">
+            <span class="dato-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 7h16v10H4z"/><path d="M4 7l8 6 8-6"/></svg></span>
+            <div>
+              <strong>Contacto</strong>
+              <span class="nota-fuente">El local todavía no tiene teléfono publicado en Google. En cuanto lo tengamos, se agrega acá el botón de WhatsApp.</span>
+            </div>
+          </div>
+          <div class="visitanos-ctas">
+            <a class="btn btn-solid" href="https://www.google.com/maps/dir/?api=1&destination=Caf%C3%A9+Tu+amor+Padre+Hurtado&destination_place_id=0x9662dd32f9e981f9:0x6537cb513eeb11f0" target="_blank" rel="noopener">Cómo llegar</a>
+            <a class="btn btn-ghost" href="https://waze.com/ul?ll=-33.5697193,-70.7910206&navigate=yes" target="_blank" rel="noopener">Abrir en Waze</a>
+          </div>
+        </div>
+        <div class="map-frame reveal">
+          <!-- Embed REAL: place id y coordenadas de su ficha de Google (10-09-2026) -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.0!2d-70.7910206!3d-33.5697193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662dd32f9e981f9%3A0x6537cb513eeb11f0!2sCaf%C3%A9%20Tu%20amor!5e0!3m2!1ses-419!2scl!4v1789005480000!5m2!1ses-419!2scl"
+            loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"
+            title="Mapa de Café Tu amor en El Trébol 1583, Padre Hurtado"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div>
+      <span class="brand-name footer-brand">Café Tu amor</span>
+      <p>El Trébol 1583 · Padre Hurtado</p>
+      <p class="status-line"><span class="status-dot" id="statusDot2"></span> <span id="statusText2">—</span></p>
+    </div>
+    <div class="footer-links">
+      <a href="https://www.google.com/maps/dir/?api=1&destination=Caf%C3%A9+Tu+amor+Padre+Hurtado" target="_blank" rel="noopener">Cómo llegar</a>
+      <a href="https://search.google.com/local/writereview?placeid=0x9662dd32f9e981f9:0x6537cb513eeb11f0" target="_blank" rel="noopener">Dejar una reseña</a>
+    </div>
+  </div>
+</footer>
+
+<script src="vida.js"></script>
+<script src="carta-fotos.js"></script>
+<script src="script.js"></script>
+<script src="carrito.js"></script>
+</body>
+</html>
