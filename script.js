@@ -158,6 +158,7 @@ function actualizarEstado(dotId, textId) {
 
 actualizarEstado('statusDot', 'statusText');
 actualizarEstado('statusDot2', 'statusText2');
+actualizarEstado('statusDot3', 'statusText3');
 
 /* ---------- SCROLL REVEAL (con red de seguridad) ---------- */
 function initScrollReveal() {
